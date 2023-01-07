@@ -22,6 +22,11 @@ public class TestGame1 : Game
 
 	private int _lastWidth, _lastHeight;
 
+	public Vector3 DiffuseColor { get; set; } = new (1f, 0.2f, 0.2f);
+	public Vector3 SpecularColor { get; set; } = new (0, 1, 0);
+	public Vector3 AmbientLightColor { get; set; } = new (0.2f, 0.2f, 0.2f);
+	public Vector3 EmissiveColor { get; set; } = new (1, 0, 0);
+
 	public TestGame1()
 	{
 		GraphicsDeviceManager = new GraphicsDeviceManager(this);
@@ -94,13 +99,12 @@ public class TestGame1 : Game
 				// effect.EnableDefaultLighting();
 				effect.LightingEnabled = true; // Turn on the lighting subsystem.
 
-				effect.DirectionalLight0.DiffuseColor = new Vector3(1f, 0.2f, 0.2f); // a reddish light
+				effect.DirectionalLight0.DiffuseColor = DiffuseColor; // a reddish light
 				effect.DirectionalLight0.Direction = new Vector3(1, 0, 0); // coming along the x-axis
-				effect.DirectionalLight0.SpecularColor = new Vector3(0, 1, 0); // with green highlights
+				effect.DirectionalLight0.SpecularColor = SpecularColor; // with green highlights
 
-				effect.AmbientLightColor = new Vector3(0.2f, 0.2f, 0.2f); // Add some overall ambient light.
-				effect.EmissiveColor =
-					new Vector3(1, 0, 0); // Sets some strange emmissive lighting.  This just looks weird.
+				effect.AmbientLightColor = AmbientLightColor; // Add some overall ambient light.
+				effect.EmissiveColor = EmissiveColor; // Sets some strange emmissive lighting.  This just looks weird.
 
 				effect.World = world;
 				effect.View = view;

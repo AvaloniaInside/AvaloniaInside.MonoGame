@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample/App.axaml" value="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample.Desktop/AvaloniaInside.MonoGameExample.Desktop.csproj" />
         <entry key="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample/Views/MainView.axaml" value="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample.Desktop/AvaloniaInside.MonoGameExample.Desktop.csproj" />
         <entry key="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample/Views/MainWindow.axaml" value="AvaloniaInside.MonoGameExample/AvaloniaInside.MonoGameExample.Desktop/AvaloniaInside.MonoGameExample.Desktop.csproj" />
       </map>

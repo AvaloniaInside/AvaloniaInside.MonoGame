@@ -14,5 +14,20 @@
 		<viewModels:MainViewModel />
 	</Design.DataContext>
 
-	<monoGame:MonoGameControl Game="{Binding CurrentGame}" />
+	<Grid ColumnDefinitions="*, 200">
+		<monoGame:MonoGameControl Game="{Binding CurrentGame}" />
+		<StackPanel Grid.Column="1" Orientation="Vertical">
+			<TextBlock Text="Diffuse Color"></TextBlock>
+			<ColorPicker Color="{Binding DiffuseColor}" ColorModel="Rgba" IsAlphaEnabled="False"></ColorPicker>
+
+			<TextBlock Text="Specular Color"></TextBlock>
+			<ColorPicker Color="{Binding SpecularColor}" ColorModel="Rgba" IsAlphaEnabled="False"></ColorPicker>
+
+			<TextBlock Text="Ambient Light Color"></TextBlock>
+			<ColorPicker Color="{Binding AmbientLightColor}" ColorModel="Rgba" IsAlphaEnabled="False"></ColorPicker>
+
+			<TextBlock Text="Emissive Color"></TextBlock>
+			<ColorPicker Color="{Binding EmissiveColor}" ColorModel="Rgba" IsAlphaEnabled="False"></ColorPicker>
+		</StackPanel>
+	</Grid>
 </UserControl>
