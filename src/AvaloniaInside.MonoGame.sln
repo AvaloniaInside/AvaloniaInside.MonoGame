@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGame", "AvaloniaInside.MonoGame\AvaloniaInside.MonoGame.csproj", "{7F904ECE-9160-42E3-9D5B-F5ACEE39DCE9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "example", "example", "{73C823E5-6D8F-4A1F-9369-F36691B110EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGameExample.Desktop", "AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample.Desktop\AvaloniaInside.MonoGameExample.Desktop.csproj", "{3EEC3876-5705-4E1E-9FF6-21489639564C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGameExample.Web", "AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample.Web\AvaloniaInside.MonoGameExample.Web.csproj", "{98B94B3E-308A-4C49-A1DF-BD3B92B60F49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGameExample.iOS", "AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample.iOS\AvaloniaInside.MonoGameExample.iOS.csproj", "{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGameExample.Android", "AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample.Android\AvaloniaInside.MonoGameExample.Android.csproj", "{3FAF78CB-B087-40EF-A2CB-3AC7032204D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AvaloniaInside.MonoGameExample", "AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample\AvaloniaInside.MonoGameExample.csproj", "{436D0F0E-7243-4654-8393-324F5C8575F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F904ECE-9160-42E3-9D5B-F5ACEE39DCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F904ECE-9160-42E3-9D5B-F5ACEE39DCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F904ECE-9160-42E3-9D5B-F5ACEE39DCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F904ECE-9160-42E3-9D5B-F5ACEE39DCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EEC3876-5705-4E1E-9FF6-21489639564C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EEC3876-5705-4E1E-9FF6-21489639564C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EEC3876-5705-4E1E-9FF6-21489639564C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EEC3876-5705-4E1E-9FF6-21489639564C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98B94B3E-308A-4C49-A1DF-BD3B92B60F49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98B94B3E-308A-4C49-A1DF-BD3B92B60F49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98B94B3E-308A-4C49-A1DF-BD3B92B60F49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98B94B3E-308A-4C49-A1DF-BD3B92B60F49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAF78CB-B087-40EF-A2CB-3AC7032204D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAF78CB-B087-40EF-A2CB-3AC7032204D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAF78CB-B087-40EF-A2CB-3AC7032204D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAF78CB-B087-40EF-A2CB-3AC7032204D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436D0F0E-7243-4654-8393-324F5C8575F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436D0F0E-7243-4654-8393-324F5C8575F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436D0F0E-7243-4654-8393-324F5C8575F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436D0F0E-7243-4654-8393-324F5C8575F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EEC3876-5705-4E1E-9FF6-21489639564C} = {73C823E5-6D8F-4A1F-9369-F36691B110EE}
+		{98B94B3E-308A-4C49-A1DF-BD3B92B60F49} = {73C823E5-6D8F-4A1F-9369-F36691B110EE}
+		{C0564DCC-B78C-4956-9DB7-EE1FAA8CB6AB} = {73C823E5-6D8F-4A1F-9369-F36691B110EE}
+		{3FAF78CB-B087-40EF-A2CB-3AC7032204D5} = {73C823E5-6D8F-4A1F-9369-F36691B110EE}
+		{436D0F0E-7243-4654-8393-324F5C8575F6} = {73C823E5-6D8F-4A1F-9369-F36691B110EE}
+	EndGlobalSection
+EndGlobal

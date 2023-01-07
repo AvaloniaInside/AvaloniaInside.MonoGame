@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="AvaloniaInside.MonoGame/AvaloniaInside.MonoGame/Views/MainView.axaml" value="AvaloniaInside.MonoGame/AvaloniaInside.MonoGame.Desktop/AvaloniaInside.MonoGame.Desktop.csproj" />
+        <entry key="AvaloniaInside.MonoGame/AvaloniaInside.MonoGame/Views/MainWindow.axaml" value="AvaloniaInside.MonoGame/AvaloniaInside.MonoGame.Desktop/AvaloniaInside.MonoGame.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>AvaloniaInside.MonoGame</Title>
+        <Description>Integration of MonoGame for Avalonia</Description>
+        <Copyright>MIT</Copyright>
+        <PackageProjectUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</RepositoryUrl>
+        <PackageTags>monogame, avalonia, avaloniaui, game, gameengine, xna</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.0.0-preview4" />
+      <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
+    </ItemGroup>
+
+</Project>
