@@ -27,3 +27,9 @@ public Game CurrentGame { get; set; } = new MyExampleGame();
 ```
 
 ![image](https://user-images.githubusercontent.com/956077/211166326-10a244a2-f265-4846-947a-6991133ce25a.png)
+
+
+## Known issues
+1. Mobile not working.
+2. There is no implementation of device input, This is could be manage by native Avalonia.
+3. Not a good performance for the moment.
