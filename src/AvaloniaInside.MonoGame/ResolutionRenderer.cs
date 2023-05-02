@@ -88,6 +88,8 @@ namespace AvaloniaInside.MonoGame;
             _needsUpdate = false;
 
             _scale = ScreenResolution.ToVector2() / VirtualResolution.ToVector2();
+            
+            try { _target?.Dispose(); } catch (Exception) { /* ignore */ }
             _target = new RenderTarget2D(_device, _virtualResolution.X, _virtualResolution.Y);
 
             switch(_method)
