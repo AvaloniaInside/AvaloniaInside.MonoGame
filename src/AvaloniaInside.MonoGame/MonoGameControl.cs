@@ -129,8 +129,8 @@ public sealed class MonoGameControl : Control
 
 	private void Initialize()
 	{
-		if (this.GetVisualRoot() is Window { PlatformImpl: { } } window)
-			_presentationParameters.DeviceWindowHandle = window.PlatformImpl.Handle.Handle;
+		if (this.GetVisualRoot() is Window { PlatformImpl: { } } window && window.TryGetPlatformHandle()?.Handle is { } handle)
+			_presentationParameters.DeviceWindowHandle = handle;
 
 		if (Game is not { } game) return;
 

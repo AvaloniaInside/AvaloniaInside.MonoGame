@@ -12,10 +12,11 @@
         <PackageLicenseUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/blob/main/LICENSE</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</RepositoryUrl>
         <PackageTags>monogame, avalonia, avaloniaui, game, gameengine, xna</PackageTags>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="11.0.0-preview4" />
+      <PackageReference Include="Avalonia" Version="11.0.0" />
       <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.303" />
     </ItemGroup>
 
