@@ -5,15 +5,27 @@
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Title>AvaloniaInside.MonoGame</Title>
-        <Description>Integration of MonoGame for Avalonia</Description>
-        <Copyright>MIT</Copyright>
-        <PackageProjectUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/blob/main/LICENSE</PackageLicenseUrl>
-        <RepositoryUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</RepositoryUrl>
-        <PackageTags>monogame, avalonia, avaloniaui, game, gameengine, xna</PackageTags>
         <Version>1.0.2</Version>
+
+        <!-- Package Metadata -->
+        <PackageId>AvaloniaInside.MonoGame</PackageId>
+        <Title>AvaloniaInside.MonoGame</Title>
+        <Authors>AvaloniaInside</Authors>
+        <Company>AvaloniaInside</Company>
+        <Description>Integration of MonoGame for Avalonia - enables embedding MonoGame content in Avalonia applications</Description>
+        <Copyright>Copyright (c) 2025 AvaloniaInside</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/AvaloniaInside/AvaloniaInside.MonoGame/</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>monogame;avalonia;avaloniaui;game;gameengine;xna;gamedev</PackageTags>
+        <PackageReleaseNotes>MonoGame integration control for Avalonia UI</PackageReleaseNotes>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="11.3.9" />
