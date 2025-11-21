@@ -154,6 +154,15 @@ public sealed class MonoGameControl : Control
 
 	private void ResetDevice(GraphicsDevice device, Size newSize)
 	{
+		// Ensure DeviceWindowHandle is set before calling Reset
+		if (_presentationParameters.DeviceWindowHandle == IntPtr.Zero)
+		{
+			if (this.GetVisualRoot() is Window { PlatformImpl: { } } window && window.TryGetPlatformHandle()?.Handle is { } handle)
+				_presentationParameters.DeviceWindowHandle = handle;
+			else
+				return; // Cannot reset device without a window handle
+		}
+
 		var newWidth = Math.Max(1, (int)Math.Ceiling(newSize.Width));
 		var newHeight = Math.Max(1, (int)Math.Ceiling(newSize.Height));
 
