@@ -129,8 +129,7 @@ public sealed class MonoGameControl : Control
 
 	private void Initialize()
 	{
-		if (this.GetVisualRoot() is Window { PlatformImpl: { } } window && window.TryGetPlatformHandle()?.Handle is { } handle)
-			_presentationParameters.DeviceWindowHandle = handle;
+		TrySetWindowHandle();
 
 		if (Game is not { } game) return;
 
@@ -154,6 +153,14 @@ public sealed class MonoGameControl : Control
 
 	private void ResetDevice(GraphicsDevice device, Size newSize)
 	{
+		// Ensure DeviceWindowHandle is set before calling Reset
+		if (_presentationParameters.DeviceWindowHandle == IntPtr.Zero)
+		{
+			TrySetWindowHandle();
+			if (_presentationParameters.DeviceWindowHandle == IntPtr.Zero)
+				return; // Cannot reset device without a window handle
+		}
+
 		var newWidth = Math.Max(1, (int)Math.Ceiling(newSize.Width));
 		var newHeight = Math.Max(1, (int)Math.Ceiling(newSize.Height));
 
@@ -168,6 +175,12 @@ public sealed class MonoGameControl : Control
 			new Vector(96d, 96d),
 			PixelFormat.Rgba8888,
 			AlphaFormat.Opaque);
+	}
+
+	private void TrySetWindowHandle()
+	{
+		if (this.GetVisualRoot() is Window { PlatformImpl: { } } window && window.TryGetPlatformHandle()?.Handle is { } handle)
+			_presentationParameters.DeviceWindowHandle = handle;
 	}
 
 	private void RunFrame(Game game)
