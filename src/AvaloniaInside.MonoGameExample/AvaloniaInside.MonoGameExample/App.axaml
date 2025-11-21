@@ -1,13 +1,14 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="using:AvaloniaInside.MonoGameExample"
-             x:Class="AvaloniaInside.MonoGameExample.App">
+             x:Class="AvaloniaInside.MonoGameExample.App"
+             RequestedThemeVariant="Default">
     <Application.DataTemplates>
         <local:ViewLocator/>
     </Application.DataTemplates>
 
-    <Application.Styles>
+	<Application.Styles>
 		<FluentTheme />
-
+		<StyleInclude Source="avares://Avalonia.Controls.ColorPicker/Themes/Fluent/Fluent.xaml" />
 	</Application.Styles>
 </Application>
